@@ -67,5 +67,54 @@ main{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
 
+/* ************** Flexbox  ************** */
+ul{
+   display:flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+ul li{
+    list-style-type: none;
+    font-size: 0.7rem;
+    height: 160px;
+    width: 30%;
+    background-color: rgb(94, 94, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+ul> li >a{
+    color: rgb(22, 2, 2);
+}
+
+@media screen and (max-width:700px){
+    #circle{
+        padding: 10px;
+        position: absolute;
+        top:10%;
+        bottom: -10%;
+        transform: translateY(-10%);
+    }
+
+   #rectangle{
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -40%);
+   } 
+
+ ul> li >a{
+  overflow: hidden;
+ }   
+}
+
+@media screen and (max-width: 900px){
+    ul> li >a{
+        overflow: hidden;
+    }    
 }
